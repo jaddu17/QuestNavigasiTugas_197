@@ -37,6 +37,12 @@ fun FormWelcome(
     onMasukClick: () -> Unit,
     modifier: Modifier
 ) {
+    Box(
+        modifier = Modifier
+            .fillMaxSize()
+            .padding(vertical = 20.dp),
+        contentAlignment = Alignment.Center
+    ){
 
     }
 }
