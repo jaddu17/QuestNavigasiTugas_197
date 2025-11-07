@@ -66,6 +66,11 @@ fun FormWelcome(
                 modifier = Modifier
                     .padding(all = 90.dp)
             )
+            Text(
+                text = "Atiqah Shafa Muthmainnah Jaddu",
+                fontSize = 15.sp,
+                color = Color.Black
+            )
         }
     }
 }
