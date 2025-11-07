@@ -76,6 +76,18 @@ fun FormWelcome(
                 fontSize = 15.sp,
                 color = Color.Black
             )
+            Button(
+                onClick = onMasukClick,
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(top = 30.dp, start = 10.dp, end = 10.dp)
+                    .height(50.dp),
+                colors = ButtonDefaults.buttonColors(
+                    containerColor = colorResource(id = R.color.hijau_busuk)
+                )
+            ){
+                Text("Masuk")
+            }
         }
     }
 }
