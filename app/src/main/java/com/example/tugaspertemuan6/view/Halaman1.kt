@@ -43,6 +43,11 @@ fun FormWelcome(
             .padding(vertical = 20.dp),
         contentAlignment = Alignment.Center
     ){
-
+        Column(
+            modifier = Modifier
+                .fillMaxSize()
+                .background(colorResource(id = R.color.hijau_muda)),
+            horizontalAlignment = Alignment.CenterHorizontally
+        )
     }
 }
