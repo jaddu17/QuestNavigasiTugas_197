@@ -59,6 +59,13 @@ fun FormWelcome(
                 fontWeight = FontWeight.Bold,
                 color = Color.Black
             )
+            val gambar = painterResource(id = R.drawable.logo)
+            Image(
+                painter = gambar,
+                contentDescription = "",
+                modifier = Modifier
+                    .padding(all = 90.dp)
+            )
         }
     }
 }
