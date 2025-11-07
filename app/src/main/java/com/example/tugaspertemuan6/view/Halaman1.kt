@@ -34,6 +34,9 @@ import com.example.tugaspertemuan6.R
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun FormWelcome(
-)
+    onMasukClick: () -> Unit,
+    modifier: Modifier
+) {
+
     }
 }
