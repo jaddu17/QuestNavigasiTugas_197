@@ -48,6 +48,9 @@ fun FormWelcome(
                 .fillMaxSize()
                 .background(colorResource(id = R.color.hijau_muda)),
             horizontalAlignment = Alignment.CenterHorizontally
-        )
+        ) {
+            Spacer(modifier = Modifier.height(40.dp))
+
+
     }
 }
