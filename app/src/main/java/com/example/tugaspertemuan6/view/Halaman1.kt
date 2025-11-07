@@ -51,6 +51,14 @@ fun FormWelcome(
         ) {
             Spacer(modifier = Modifier.height(40.dp))
 
-
+            Text(
+                modifier = Modifier
+                    .padding(top = 100.dp),
+                text = "Selamat Datang",
+                fontSize = 22.sp,
+                fontWeight = FontWeight.Bold,
+                color = Color.Black
+            )
+        }
     }
 }
