@@ -52,34 +52,37 @@ fun FormWelcome(
 
             Text(
                 modifier = Modifier
-                    .padding(top = 100.dp),
+                    .padding(top = 120.dp),
                 text = "Selamat Datang",
                 fontSize = 22.sp,
                 fontWeight = FontWeight.Bold,
                 color = Color.Black
             )
-            val gambar = painterResource(id = R.drawable.logo)
+            val gambar = painterResource(id = R.drawable.logokopken)
             Image(
                 painter = gambar,
                 contentDescription = "",
                 modifier = Modifier
-                    .padding(all = 90.dp)
+                    .padding(all = 50.dp)
             )
+            Spacer(modifier = Modifier.height(10.dp))
             Text(
                 text = "Atiqah Shafa Muthmainnah Jaddu",
                 fontSize = 15.sp,
+                fontWeight = FontWeight.Bold,
                 color = Color.Black
             )
             Text(
                 text = "20230140197",
                 fontSize = 15.sp,
+                fontWeight = FontWeight.Bold,
                 color = Color.Black
             )
             Button(
                 onClick = onMasukClick,
                 modifier = Modifier
                     .fillMaxWidth()
-                    .padding(top = 30.dp, start = 10.dp, end = 10.dp)
+                    .padding(top = 50.dp, start = 50.dp, end = 50.dp)
                     .height(50.dp),
                 colors = ButtonDefaults.buttonColors(
                     containerColor = colorResource(id = R.color.hijau_busuk)
