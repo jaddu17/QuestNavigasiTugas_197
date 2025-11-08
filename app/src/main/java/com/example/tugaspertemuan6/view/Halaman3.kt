@@ -143,7 +143,23 @@ fun FormPendaftaran(
                         }
                     }
                 }
+                Text(
+                    stringResource(id = R.string.alamat),
+                    fontSize = 18.sp,
+                    modifier = Modifier.padding(top = 12.dp, start = 16.dp, bottom = 10.dp)
+                )
+                OutlinedTextField(
+                    value = textAlamat,
+                    singleLine = true,
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(start = 12.dp, end = 12.dp),
+                    label = { Text(text = "Isikan alamat") },
 
+                    onValueChange = {
+                        textAlamat = it
+                    }
+                )
             }
         }
     }
