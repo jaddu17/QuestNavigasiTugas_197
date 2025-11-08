@@ -116,6 +116,8 @@ fun FormPendaftaran(
                         }
                     }
                 }
+                Spacer(modifier = Modifier.height(5.dp))
+
             }
         }
     }
