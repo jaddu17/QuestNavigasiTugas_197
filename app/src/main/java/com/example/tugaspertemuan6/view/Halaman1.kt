@@ -35,12 +35,11 @@ import com.example.tugaspertemuan6.R
 @Composable
 fun FormWelcome(
     onMasukClick: () -> Unit,
-    modifier: Modifier
 ) {
     Box(
         modifier = Modifier
             .fillMaxSize()
-            .padding(vertical = 20.dp),
+            .padding(vertical = 10.dp),
         contentAlignment = Alignment.Center
     ){
         Column(
@@ -86,7 +85,7 @@ fun FormWelcome(
                     containerColor = colorResource(id = R.color.hijau_busuk)
                 )
             ){
-                Text("Masuk")
+                Text(stringResource(id= R.string.masuk))
             }
         }
     }
