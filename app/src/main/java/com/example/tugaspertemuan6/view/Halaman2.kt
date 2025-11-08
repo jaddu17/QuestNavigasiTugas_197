@@ -206,7 +206,16 @@ fun FormList(
                     Text(stringResource(id = R.string.beranda))
                 }
 
-
+                Button(
+                    modifier = Modifier.weight(1f)
+                        .padding(end = 5.dp )
+                        .size(50.dp),
+                    onClick = OnNextBtnClick,
+                    colors = ButtonDefaults.buttonColors(
+                        containerColor = colorResource(id = R.color.hijau_busuk))
+                ) {
+                    Text(stringResource(id = R.string.formulir))
+                }
             }
         }
     }
