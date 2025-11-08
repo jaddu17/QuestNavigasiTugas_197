@@ -197,7 +197,7 @@ fun FormList(
             ) {
                 Button(
                     modifier = Modifier.weight(1f)
-                        .padding(start = 5.dp)
+                        .padding(start = 15.dp)
                         .size(50.dp),
                     onClick = OnBackBtnClick,
                     colors = ButtonDefaults.buttonColors(
@@ -208,7 +208,7 @@ fun FormList(
 
                 Button(
                     modifier = Modifier.weight(1f)
-                        .padding(end = 5.dp )
+                        .padding(end = 15.dp )
                         .size(50.dp),
                     onClick = OnNextBtnClick,
                     colors = ButtonDefaults.buttonColors(
