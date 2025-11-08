@@ -32,6 +32,14 @@ fun DataApp(
             modifier = Modifier
                 .padding(isiRuang)
                 .fillMaxSize()
-        )
+        ) {
+            composable(route = Navigasi.Home.name) {
+                FormWelcome(
+                    onMasukClick = {
+                        navController.navigate(Navigasi.List.name)
+                    }
+                )
+            }
+        }
     }
 }
