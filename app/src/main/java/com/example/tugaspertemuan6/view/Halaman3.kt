@@ -43,5 +43,18 @@ fun FormPendaftaran(
     val gender:List<String> = listOf("Laki-Laki", "Perempuan")
     val kawin:List<String> = listOf("Single", "Taken", "HTS")
 
-
+    Scaffold(
+        modifier = Modifier
+            .fillMaxSize()
+            .padding(top = 10.dp),
+        topBar = {
+            TopAppBar(
+                title = {
+                    Text(text = "Formulir Pendaftaran")},
+                    colors = TopAppBarDefaults.mediumTopAppBarColors(
+                        containerColor = colorResource(id = R.color.hijau_muda))
+            )
+        },
+    ) 
+    }
 }
