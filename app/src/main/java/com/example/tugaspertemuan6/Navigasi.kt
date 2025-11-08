@@ -64,3 +64,13 @@ fun DataApp(
     }
 }
 
+private fun submitAndGoToPopUp(navController: NavHostController) {
+    navController.navigate(Navigasi.Form.name)
+}
+
+
+private fun cancelAndBackToHome(
+    navController: NavController
+){
+    navController.popBackStack(Navigasi.Home.name, inclusive = false)
+}
