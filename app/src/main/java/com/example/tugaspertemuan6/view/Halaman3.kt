@@ -161,7 +161,22 @@ fun FormPendaftaran(
                     }
                 )
                 Spacer(modifier = Modifier.padding(top = 130.dp))
+                Row(
+                    horizontalArrangement = Arrangement.spacedBy(8.dp)
+                ) {
+                    Button(
+                        modifier = Modifier.weight(1f)
+                            .padding(start = 10.dp, bottom = 5.dp)
+                            .size(50.dp),
+                        onClick = OnKembaliBtnClick,
+                        colors = ButtonDefaults.buttonColors(
+                            containerColor = colorResource(id = R.color.hijau_busuk)
+                        )
+                    ) {
+                        Text(stringResource(id = R.string.beranda))
+                    }
 
+                }
             }
         }
     }
