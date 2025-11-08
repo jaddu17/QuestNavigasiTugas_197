@@ -191,7 +191,25 @@ fun FormPendaftaran(
                         Text(stringResource(id = R.string.submit))
                     }
                 }
-
+                if (showDialog) {
+                    AlertDialog(
+                        onDismissRequest = { showDialog = false },
+                        confirmButton = {
+                            TextButton(onClick = { showDialog = false }) {
+                                Text("OK")
+                            }
+                        },
+                        title = { Text("Data Berhasil Disimpan") },
+                        text = {
+                            Column {
+                                Text("Nama : " +namaLengkap)
+                                Text("Jenis Kelamin :" + jenisKelamin)
+                                Text("Status : " + status)
+                                Text("Alamat : " + alamat)
+                            }
+                        }
+                    )
+                }
             }
         }
     }
