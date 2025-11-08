@@ -64,7 +64,66 @@ fun FormList(
                 colors = CardDefaults.cardColors(
                     containerColor = colorResource(id = R.color.cokelat)
                 )
-            )
+            ) {
+                Column(modifier = Modifier.padding(10.dp)) {
+
+                    Row(
+                        modifier = Modifier.fillMaxWidth()
+                    ) {
+                        Column {
+                            Text(stringResource(id = R.string.nama_lengkap),
+                                fontWeight = FontWeight.Bold,
+                                fontSize = 12.sp,
+                                color = Color.White)
+                            Text("Shafa Jaddu",
+                                fontSize = 14.sp,
+                                color = Color.White)
+                        }
+                        Spacer(modifier = Modifier.width(100.dp))
+                        Column {
+                            Text(stringResource(id = R.string.jenis_kelamin),
+                                fontWeight = FontWeight.Bold,
+                                fontSize = 12.sp,
+                                color = Color.White)
+                            Text("Perempuan",
+                                fontSize = 14.sp,
+                                color = Color.White)
+                        }
+                    }
+
+                    Spacer(modifier = Modifier.height(8.dp))
+
+                    Row(
+                        modifier = Modifier.fillMaxWidth()
+                    ) {
+                        Column {
+                            Text(
+                                stringResource(id = R.string.status),
+                                fontWeight = FontWeight.Bold,
+                                fontSize = 12.sp,
+                                color = Color.White
+                            )
+                            Text("Single",
+                                fontSize = 14.sp,
+                                color = Color.White
+                            )
+                        }
+                        Spacer(modifier = Modifier.width(150.dp))
+                        Column {
+                            Text(stringResource(id = R.string.alamat),
+                                fontWeight = FontWeight.Bold,
+                                fontSize = 12.sp,
+                                color = Color.White
+                            )
+                            Text("Kasihan",
+                                fontSize = 14.sp,
+                                color = Color.White
+                            )
+                        }
+                    }
+                }
+            }
+
         }
     }
 }
