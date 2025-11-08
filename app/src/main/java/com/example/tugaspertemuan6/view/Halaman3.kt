@@ -160,6 +160,8 @@ fun FormPendaftaran(
                         textAlamat = it
                     }
                 )
+                Spacer(modifier = Modifier.padding(top = 130.dp))
+
             }
         }
     }
