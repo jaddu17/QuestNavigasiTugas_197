@@ -176,7 +176,22 @@ fun FormPendaftaran(
                         Text(stringResource(id = R.string.beranda))
                     }
 
+                    Button(
+                        modifier = Modifier.weight(1f)
+                            .padding(end = 10.dp, bottom = 5.dp)
+                            .size(50.dp),
+                        onClick = {
+                            showDialog = true
+                            OnSubmitBtnClick()
+                        },
+                        colors = ButtonDefaults.buttonColors(
+                            containerColor = colorResource(id = R.color.hijau_busuk)
+                        ),
+                    ) {
+                        Text(stringResource(id = R.string.submit))
+                    }
                 }
+
             }
         }
     }
