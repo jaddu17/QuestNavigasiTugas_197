@@ -23,8 +23,8 @@ enum class Navigasi{
 @Composable
 fun DataApp(
     navController: NavHostController = rememberNavController()
-) {
-    Scaffold { isiRuang ->
+){
+    Scaffold { isiRuang->
         NavHost(
             navController = navController,
             startDestination = Navigasi.Home.name,
@@ -32,15 +32,15 @@ fun DataApp(
             modifier = Modifier
                 .padding(isiRuang)
                 .fillMaxSize()
-        ) {
-            composable(route = Navigasi.Home.name) {
+        ){
+            composable(route = Navigasi.Home.name){
                 FormWelcome(
                     onMasukClick = {
                         navController.navigate(Navigasi.List.name)
                     }
                 )
             }
-            composable(route = Navigasi.List.name) {
+            composable(route = Navigasi.List.name){
                 FormList(
                     OnBackBtnClick = {
                         cancelAndBackToHome(navController)
@@ -50,6 +50,17 @@ fun DataApp(
                     }
                 )
             }
+            composable(route = Navigasi.Form.name){
+                FormPendaftaran(
+                    OnKembaliBtnClick = {
+                        navController.navigate(Navigasi.List.name)
+                    },
+                    OnSubmitBtnClick = {
+                        submitAndGoToPopUp(navController)
+                    }
+                )
+            }
         }
     }
 }
+
