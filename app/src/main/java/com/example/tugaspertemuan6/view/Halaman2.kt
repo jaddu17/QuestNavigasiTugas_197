@@ -44,6 +44,10 @@ fun FormList(
             .padding(vertical = 10.dp),
         contentAlignment = Alignment.Center
     ) {
-
+        Column(
+            modifier = Modifier
+                .fillMaxSize()
+                .background(colorResource(id = R.color.hijau_muda))
+        )
     }
 }
