@@ -58,7 +58,13 @@ fun FormList(
                     .padding(top = 50.dp, start = 12.dp)
             )
             Spacer(modifier = Modifier.height(8.dp))
-
+            Card(
+                modifier = Modifier
+                    .padding(all = 12.dp),
+                colors = CardDefaults.cardColors(
+                    containerColor = colorResource(id = R.color.cokelat)
+                )
+            )
         }
     }
 }
