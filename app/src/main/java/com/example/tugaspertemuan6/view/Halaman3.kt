@@ -27,4 +27,21 @@ import com.example.tugaspertemuan6.R
 fun FormPendaftaran(
     OnKembaliBtnClick: () -> Unit,
     OnSubmitBtnClick: () -> Unit
-)
+) {
+    var textNama by remember { mutableStateOf("") }
+    var textJK by remember { mutableStateOf("") }
+    var textStatus by remember { mutableStateOf("") }
+    var textAlamat by remember { mutableStateOf("") }
+
+    var namaLengkap by remember { mutableStateOf("") }
+    var jenisKelamin by remember { mutableStateOf("") }
+    var status by remember { mutableStateOf("") }
+    var alamat by remember { mutableStateOf("") }
+
+    var showDialog by remember { mutableStateOf(false) }
+
+    val gender:List<String> = listOf("Laki-Laki", "Perempuan")
+    val kawin:List<String> = listOf("Single", "Taken", "HTS")
+
+
+}
