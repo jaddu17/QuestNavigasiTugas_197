@@ -57,6 +57,8 @@ fun FormList(
                 modifier = Modifier
                     .padding(top = 50.dp, start = 12.dp)
             )
+            Spacer(modifier = Modifier.height(8.dp))
+
         }
     }
 }
