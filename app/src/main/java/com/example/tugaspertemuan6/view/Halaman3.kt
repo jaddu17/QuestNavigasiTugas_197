@@ -55,6 +55,14 @@ fun FormPendaftaran(
                         containerColor = colorResource(id = R.color.hijau_muda))
             )
         },
-    ) 
+    ) { isiRuang ->
+        Column(
+            modifier = Modifier
+                .padding(isiRuang)
+                .fillMaxSize()
+                .background(colorResource(id = R.color.hijau_muda)),
+            verticalArrangement = Arrangement.Top,
+            horizontalAlignment = Alignment.CenterHorizontally
+        )
     }
 }
