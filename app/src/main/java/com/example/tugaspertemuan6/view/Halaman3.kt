@@ -181,8 +181,11 @@ fun FormPendaftaran(
                             .padding(end = 10.dp, bottom = 5.dp)
                             .size(50.dp),
                         onClick = {
+                            namaLengkap = textNama
+                            jenisKelamin = textJK
+                            status = textStatus
+                            alamat = textAlamat
                             showDialog = true
-                            OnSubmitBtnClick()
                         },
                         colors = ButtonDefaults.buttonColors(
                             containerColor = colorResource(id = R.color.hijau_busuk)
@@ -195,7 +198,8 @@ fun FormPendaftaran(
                     AlertDialog(
                         onDismissRequest = { showDialog = false },
                         confirmButton = {
-                            TextButton(onClick = { showDialog = false }) {
+                            TextButton(onClick = { showDialog = false
+                                OnSubmitBtnClick() }) {
                                 Text("OK")
                             }
                         },
