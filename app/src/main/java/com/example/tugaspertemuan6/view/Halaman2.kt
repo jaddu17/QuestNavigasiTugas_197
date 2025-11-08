@@ -48,6 +48,15 @@ fun FormList(
             modifier = Modifier
                 .fillMaxSize()
                 .background(colorResource(id = R.color.hijau_muda))
-        )
+        ) {
+            Text(
+                text = "List Daftar Peserta",
+                fontSize = 30.sp,
+                fontWeight = FontWeight.Bold,
+                color = Color.Black,
+                modifier = Modifier
+                    .padding(top = 50.dp, start = 12.dp)
+            )
+        }
     }
 }
