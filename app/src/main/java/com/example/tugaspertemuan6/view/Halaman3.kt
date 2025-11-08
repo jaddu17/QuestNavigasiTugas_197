@@ -63,6 +63,15 @@ fun FormPendaftaran(
                 .background(colorResource(id = R.color.hijau_muda)),
             verticalArrangement = Arrangement.Top,
             horizontalAlignment = Alignment.CenterHorizontally
-        )
+        ) {
+            ElevatedCard(
+                modifier = Modifier
+                    .fillMaxSize()
+                    .padding(start = 12.dp, bottom = 12.dp, end = 12.dp),
+                colors = CardDefaults.cardColors(
+                    containerColor = colorResource(id = R.color.cokelat)
+                )
+            )
+        }
     }
 }
