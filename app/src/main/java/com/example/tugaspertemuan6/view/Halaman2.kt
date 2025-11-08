@@ -192,7 +192,22 @@ fun FormList(
             }
 
             Spacer(modifier = Modifier.height(220.dp))
+            Row(
+                horizontalArrangement = Arrangement.spacedBy(8.dp)
+            ) {
+                Button(
+                    modifier = Modifier.weight(1f)
+                        .padding(start = 5.dp)
+                        .size(50.dp),
+                    onClick = OnBackBtnClick,
+                    colors = ButtonDefaults.buttonColors(
+                        containerColor = colorResource(id = R.color.hijau_busuk))
+                ) {
+                    Text(stringResource(id = R.string.beranda))
+                }
 
+
+            }
         }
     }
 }
