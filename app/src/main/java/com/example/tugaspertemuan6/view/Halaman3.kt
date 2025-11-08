@@ -71,7 +71,25 @@ fun FormPendaftaran(
                 colors = CardDefaults.cardColors(
                     containerColor = colorResource(id = R.color.cokelat)
                 )
-            )
+            ) {
+                Text(
+                    stringResource(id = R.string.nama_lengkap),
+                    fontSize = 18.sp,
+                    modifier = Modifier.padding(top = 12.dp, start = 16.dp, bottom = 10.dp)
+                )
+                OutlinedTextField(
+                    value = textNama,
+                    singleLine = true,
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(start = 16.dp, end = 12.dp),
+                    label = { Text(text = "Isian Nama Lengkap") },
+
+                    onValueChange = {
+                        textNama = it
+                    }
+                )
+            }
         }
     }
 }
