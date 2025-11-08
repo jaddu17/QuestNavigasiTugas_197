@@ -24,4 +24,14 @@ enum class Navigasi{
 fun DataApp(
     navController: NavHostController = rememberNavController()
 ) {
+    Scaffold { isiRuang ->
+        NavHost(
+            navController = navController,
+            startDestination = Navigasi.Home.name,
+
+            modifier = Modifier
+                .padding(isiRuang)
+                .fillMaxSize()
+        )
+    }
 }
