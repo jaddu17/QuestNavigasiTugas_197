@@ -90,6 +90,32 @@ fun FormPendaftaran(
                     }
                 )
                 Spacer(modifier = Modifier.height(16.dp))
+                Text(
+                    stringResource(id = R.string.jenis_kelamin),
+                    fontSize = 18.sp,
+                    color = Color.Black,
+                    modifier = Modifier
+                        .padding(top = 10.dp, start = 16.dp)
+                )
+                Row {
+                    gender.forEach { item ->
+                        Row(
+                            modifier = Modifier
+                                .selectable(
+                                    selected = textJK == item,
+                                    onClick = { textJK = item }
+                                )
+                                .padding(end = 8.dp),
+                            verticalAlignment = Alignment.CenterVertically
+                        ) {
+                            RadioButton(
+                                selected = textJK == item,
+                                onClick = { textJK = item }
+                            )
+                            Text(item)
+                        }
+                    }
+                }
             }
         }
     }
