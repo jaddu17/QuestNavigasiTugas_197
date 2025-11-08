@@ -117,6 +117,32 @@ fun FormPendaftaran(
                     }
                 }
                 Spacer(modifier = Modifier.height(5.dp))
+                Text(
+                    stringResource(id = R.string.status),
+                    fontSize = 18.sp,
+                    color = Color.Black,
+                    modifier = Modifier
+                        .padding(top = 10.dp, start = 16.dp)
+                )
+                Row {
+                    kawin.forEach { item ->
+                        Row(
+                            modifier = Modifier
+                                .selectable(
+                                    selected = textStatus == item,
+                                    onClick = { textStatus = item }
+                                )
+                                .padding(end = 8.dp),
+                            verticalAlignment = Alignment.CenterVertically
+                        ) {
+                            RadioButton(
+                                selected = textStatus == item,
+                                onClick = { textStatus = item }
+                            )
+                            Text(item)
+                        }
+                    }
+                }
 
             }
         }
