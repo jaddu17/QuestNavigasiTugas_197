@@ -40,6 +40,16 @@ fun DataApp(
                     }
                 )
             }
+            composable(route = Navigasi.List.name) {
+                FormList(
+                    OnBackBtnClick = {
+                        cancelAndBackToHome(navController)
+                    },
+                    OnNextBtnClick = {
+                        navController.navigate(Navigasi.Form.name)
+                    }
+                )
+            }
         }
     }
 }
