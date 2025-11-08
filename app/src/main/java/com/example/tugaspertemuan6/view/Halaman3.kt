@@ -89,6 +89,7 @@ fun FormPendaftaran(
                         textNama = it
                     }
                 )
+                Spacer(modifier = Modifier.height(16.dp))
             }
         }
     }
