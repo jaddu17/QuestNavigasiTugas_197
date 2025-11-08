@@ -38,6 +38,12 @@ fun FormList(
     OnBackBtnClick : () -> Unit,
     OnNextBtnClick : () -> Unit,
 ){
+    Box(
+        modifier = Modifier
+            .fillMaxSize()
+            .padding(vertical = 10.dp),
+        contentAlignment = Alignment.Center
+    ) {
 
     }
 }
